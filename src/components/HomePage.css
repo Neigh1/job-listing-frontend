@@ -1,0 +1,119 @@
+/* Basic Styling for the HomePage */
+
+.homepage {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .search-bar {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .job-categories {
+    margin: 40px 0;
+  }
+  
+  .job-categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .featured-jobs {
+    margin: 40px 0;
+  }
+  
+  .featured-jobs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-listings {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .job {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .job h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .cta button {
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .view-jobs-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .post-job-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
