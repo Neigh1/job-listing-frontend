@@ -4,9 +4,9 @@ import HomePage from './components/HomePage';
 import AddJobPage from './components/AddJobPage';
 import JobListPage from './components/JobListPage';
 import JobDetailsPage from './components/JobDetailsPage';
+import Blog from './components/blog'; 
 import './App.css'; // Import your global styles
-import logo from './Images/Screenshot 2024-10-03 154214.png'; // 
-//import blog from '.components/blog';
+import logo from './Images/Screenshot 2024-10-03 154214.png'; 
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/add-job">Add Job</Link></li>
             <li><Link to="/job-list">Job Listings</Link></li>
-            <li><Link to="/job-details">Job Details</Link></li>
+            <li><Link to="/job-details/:id">Job Details</Link></li>
+            <li><Link to="/blog">Blog</Link></li> {/* Blog link */}
           </ul>
         </nav>
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/add-job" element={<AddJobPage />} />
           <Route path="/job-list" element={<JobListPage />} />
           <Route path="/job-details/:id" element={<JobDetailsPage />} />
+          <Route path="/blog" element={<Blog />} /> {/* Route for Blog */}
         </Routes>
       </div>
     </Router>
