@@ -1,15 +1,16 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'; // Import Link
 
 function JobListing() {
   return (
     <div>
       <h2>Job Listings</h2>
-      {jobs.map((job) => (
-        <div key={job.title}>
+      {jobs.map((job, index) => (
+        <div key={index}>
           <h3>{job.title}</h3>
           <p>Company: {job.company}</p>
           <p>Location: {job.location}</p>
+          <Link to={`/job/${index}`}>View Details</Link> {/* Add link to job details page */}
         </div>
       ))}
     </div>
@@ -29,5 +30,4 @@ const jobs = [
   { title: 'Quality Assurance Tester', company: 'YZQ Labs', location: 'Rivonia' },
 ];
 
-
-export default JobListPage;
+export default JobListing;

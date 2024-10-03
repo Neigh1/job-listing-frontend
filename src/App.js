@@ -6,7 +6,7 @@ import JobListPage from './components/JobListPage';
 import JobDetailsPage from './components/JobDetailsPage';
 import './App.css'; // Import your global styles
 import logo from './Images/Screenshot 2024-10-03 154214.png'; // 
-import Blog from '.components/blog';
+//import blog from '.components/blog';
 
 function App() {
   return (
