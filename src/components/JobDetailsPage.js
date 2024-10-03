@@ -6,10 +6,12 @@ function JobDetailsPage() {
 
   return (
     <div>
-      <h1>Job Details for Job ID: {id}</h1>
-      <p>Here you can display the full job details for the selected job.</p>
+      <h2>Job Details</h2>
+      <p>Job Type: Full-time</p>
+      <p>Location: Remote</p>
+      <p>Salary: R60,000 - R80,000</p>
     </div>
   );
-}
+
 
 export default JobDetailsPage;
