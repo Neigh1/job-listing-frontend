@@ -5,6 +5,7 @@ import AddJobPage from './components/AddJobPage';
 import JobListPage from './components/JobListPage';
 import JobDetailsPage from './components/JobDetailsPage';
 import './App.css'; // Import your global styles
+import logo from './Images/Screenshot 2024-10-03 154214.png'; // 
 
 function App() {
   return (
@@ -12,10 +13,15 @@ function App() {
       <div className="app">
         {/* Navigation Bar */}
         <nav className="navbar">
+          {/* Logo */}
+          <div className="logo-container">
+            <img src={logo} alt="Company Logo" className="logo" />
+          </div>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/add-job">Add Job</Link></li>
             <li><Link to="/job-list">Job Listings</Link></li>
+            <li><Link to="/job-details">Job Details</Link></li>
           </ul>
         </nav>
 
