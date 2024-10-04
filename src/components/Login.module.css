@@ -1,0 +1,25 @@
+.formContainer {
+    /* Glass effect attempt */
+    background: rgba(113, 131, 85, 0.32); 
+    border-radius: 16px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px); 
+    
+    text-align: center; 
+    color: black; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signButton {
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: White; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+  
+}
