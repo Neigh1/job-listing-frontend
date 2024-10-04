@@ -1,6 +1,6 @@
 import React from 'react';
 
-function JobInfo() {
+function JobDetailsPage() {
   return (
     <div>
       <h2>Job Details</h2>
