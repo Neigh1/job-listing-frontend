@@ -1,63 +1,48 @@
 import React from 'react';
-import './HomePage.css'; 
+import './HomePage.css';
 
 function HomePage() {
   return (
     <div className="homepage">
-      {/* Header Section */}
       <header className="hero-section">
-        <h1>Welcome to Graduates 24/7</h1>
-        <p>Your one-stop platform to find or post jobs easily!</p>
+        <h1 className="hero-title">Welcome to Graduates 24/7</h1>
+        <p className="hero-subtitle">Your one-stop platform to find or post jobs easily!</p>
         <section className="search-bar">
-        <input
-          type="text"
-          placeholder="Search for jobs by title, company, or location..."
-        />
-        <button type="button">Search</button>
-      </section>
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search for jobs by title, company, or location..."
+          />
+          <button type="button" className="search-button">Search</button>
+        </section>
       </header>
 
-    
-
-      {/* Job Categories Section */}
-      <section className="job-categories">
-        <h2>Explore Job Categories</h2>
-        <div className="categories">
-          <div className="category">Software Development</div>
-          <div className="category">Data Science</div>
-          <div className="category">Design</div>
-          <div className="category">Marketing</div>
-          <div className="category">Sales</div>
+      <h3 className="reviews-title">What Our Users Say</h3>
+      <div className='ReviewContainer' id='Review'>
+        <div className="review">
+          <h4 className="review-title">Excellent Experience!</h4>
+          <p className="review-text">
+            "I found my dream job through Graduates24/7! The website is user-friendly and the job listings are relevant." - <span className="review-author">Thando Ngcobo</span>
+          </p>
         </div>
-      </section>
-
-      {/* Featured Jobs Section */}
-      <section className="featured-jobs">
-        <h2>Featured Jobs</h2>
-        <div className="job-listings">
-          <div className="job">
-            <h3>Front-End Developer</h3>
-            <p>Company: ABC Corp</p>
-            <p>Location: Remote</p>
-          </div>
-          <div className="job">
-            <h3>Data Analyst</h3>
-            <p>Company: XYZ Inc</p>
-            <p>Location: Parktown, JHB</p>
-          </div>
-          <div className="job">
-            <h3>UX/UI Designer</h3>
-            <p>Company: Creative Labs</p>
-            <p>Location: Sandton, JHB</p>
-          </div>
+        <div className="review">
+          <h4 className="review-title">Helped Me Get Hired!</h4>
+          <p className="review-text">
+            "Graduates24/7 provided me with valuable resources and tips to improve my CV and interview skills. I'm now working at my desired company!" - <span className="review-author">Sipho Mthembu</span>
+          </p>
         </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="cta">
-        <button className="view-jobs-btn">View All Jobs</button>
+        <div className="review">
+          <h4 className="review-title">Easy to Use!</h4>
+          <p className="review-text">
+            "I was impressed by the simplicity and effectiveness of Graduates24/7. I applied for several jobs and received responses quickly." - <span className="review-author">Ntombi Khumalo</span>
+          </p>
+        </div>
+      </div>
+      
+      <div className="cta">
+        <button className="view-jobs-btn">View Jobs</button>
         <button className="post-job-btn">Post a Job</button>
-      </section>
+      </div>
     </div>
   );
 }

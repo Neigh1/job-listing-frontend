@@ -13,7 +13,7 @@ function AddBlogPostPage() {
       postTitle,
       authorName,
       postContent,
-      tags: tags.split(',').map(tag => tag.trim()), // Split tags by comma and trim whitespace
+      tags: tags.split(',').map(tag => tag.trim()), 
     };
 
     console.log('Blog Post Data Submitted:', blogPostData);
@@ -35,7 +35,7 @@ function AddBlogPostPage() {
             type="text"
             name="postTitle"
             value={postTitle}
-            onChange={(e) => setPostTitle(e.target.value)} // Update state on change
+            onChange={(e) => setPostTitle(e.target.value)} 
             placeholder="Enter the blog post title"
             required
           />
@@ -47,7 +47,7 @@ function AddBlogPostPage() {
             type="text"
             name="authorName"
             value={authorName}
-            onChange={(e) => setAuthorName(e.target.value)} // Update state on change
+            onChange={(e) => setAuthorName(e.target.value)} 
             placeholder="Enter the author's name"
             required
           />
@@ -58,7 +58,7 @@ function AddBlogPostPage() {
           <textarea
             name="postContent"
             value={postContent}
-            onChange={(e) => setPostContent(e.target.value)} // Update state on change
+            onChange={(e) => setPostContent(e.target.value)} 
             placeholder="Enter the blog post content"
             required
           />
@@ -70,7 +70,7 @@ function AddBlogPostPage() {
             type="text"
             name="tags"
             value={tags}
-            onChange={(e) => setTags(e.target.value)} // Update state on change
+            onChange={(e) => setTags(e.target.value)} 
             placeholder="Enter tags"
           />
         </div>

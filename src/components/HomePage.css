@@ -45,57 +45,20 @@
     border-radius: 50px;
     cursor: pointer;
   }
-  
-  .job-categories {
-    margin: 40px 0;
-  }
-  
-  .job-categories h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .categories {
+  .ReviewContainer {
     display: flex;
-    justify-content: space-around;
-  }
-  
-  .category {
-    background-color: #b5c99a;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; 
+}
+
+.review {
+    margin: 0 20px; 
     padding: 15px;
+    border: 1px solid #ccc; 
     border-radius: 5px;
-    width: 150px;
-    text-align: center;
-  }
-  
-  .featured-jobs {
-    margin: 40px 0;
-  }
-  
-  .featured-jobs h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .job-listings {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .job {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    width: 30%;
-    border-radius: 5px;
-  }
-  
-  .job h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
+    max-width: 300px; 
+}
   .cta {
     text-align: center;
     margin: 50px 0;

@@ -6,29 +6,8 @@ function Blog() {
     <div className="blog-container">
       <h2>Blog Posts</h2>
 
-      {/* Reviews Section */}
-      <h3>What Our Users Say</h3>
-      <div className="reviews">
-        <div className="review">
-          <h4>Excellent Experience!</h4>
-          <p>
-            "I found my dream job through Graduates24/7! The website is user-friendly and the job listings are relevant." - <span>Thando Ngcobo</span>
-          </p>
-        </div>
-        <div className="review">
-          <h4>Helped Me Get Hired!</h4>
-          <p>
-            "Graduates24/7 provided me with valuable resources and tips to improve my CV and interview skills. I'm now working at my desired company!" - <span>Sipho Mthembu</span>
-          </p>
-        </div>
-        <div className="review">
-          <h4>Easy to Use!</h4>
-          <p>
-            "I was impressed by the simplicity and effectiveness of Graduates24/7. I applied for several jobs and received responses quickly." - <span>Ntombi Khumalo</span>
-          </p>
-        </div>
-      </div>
-
+      
+      
       {/* CV-Making Instructions Section */}
       <h3>How to Create a Winning CV</h3>
       <p>Follow these steps to craft a compelling CV:</p>
