@@ -8,16 +8,16 @@ function HomePage() {
       <header className="hero-section">
         <h1>Welcome to Graduates 24/7</h1>
         <p>Your one-stop platform to find or post jobs easily!</p>
-      </header>
-
-      {/* Search Bar */}
-      <section className="search-bar">
+        <section className="search-bar">
         <input
           type="text"
           placeholder="Search for jobs by title, company, or location..."
         />
         <button type="button">Search</button>
       </section>
+      </header>
+
+    
 
       {/* Job Categories Section */}
       <section className="job-categories">

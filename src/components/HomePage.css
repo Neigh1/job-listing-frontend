@@ -1,4 +1,4 @@
-/* Basic Styling for the HomePage */
+
 
 .homepage {
     font-family: Arial, sans-serif;
@@ -7,7 +7,8 @@
   
   .hero-section {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #E2E6DB;
+    border-radius: 40px;
     padding: 50px;
     margin-bottom: 30px;
   }
@@ -32,14 +33,16 @@
     padding: 10px;
     font-size: 1rem;
     margin-right: 10px;
+    border-radius: 50px;
   }
   
   .search-bar button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007bff;
+    background-color: #718355;
     color: white;
     border: none;
+    border-radius: 50px;
     cursor: pointer;
   }
   
@@ -58,8 +61,8 @@
   }
   
   .category {
-    background-color: #007bff;
-    color: white;
+    background-color: #b5c99a;
+    color: black;
     padding: 15px;
     border-radius: 5px;
     width: 150px;
@@ -106,14 +109,18 @@
   }
   
   .view-jobs-btn {
-    background-color: #2A3022;
-    color: white;
+    background-color: #718355;
+    color: Black;
     border: none;
+    border-radius: 50px;
+   
   }
   
   .post-job-btn {
     background-color: #718355;
-    color: white;
+    color: Black;
     border: none;
+    border-radius: 50px;
+    
   }
   

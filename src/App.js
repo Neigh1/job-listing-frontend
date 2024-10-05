@@ -22,7 +22,6 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/add-job">Add Job</Link></li>
             <li><Link to="/job-list">Job Listings</Link></li>
-            <li><Link to="/job-details/:id">Job Details</Link></li>
             <li><Link to="/blog">Blog</Link></li> {/* Blog link */}
           </ul>
         </nav>
