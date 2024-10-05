@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './JobDetailsPage.css'
 
 const jobs = [
   { title: 'Software Developer', company: 'ABC Corp', location: 'Sandton', jobType: 'Full-time', salary: 'R 60,000 - R 80,000 per annum', experience: '2-5 years', skills: 'JavaScript, HTML, CSS, React' },
@@ -19,7 +20,7 @@ function JobDetailsPage() {
   const job = jobs[id];
 
   return (
-    <div>
+    <div className='JobDetails' id='JobDetails'>
       <h2>Job Details</h2>
       {job ? (
         <div>
