@@ -1,53 +1,13 @@
-/* Global styles */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-}
-
-/* Navigation Bar */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-}
-
-.navbar ul {
-  list-style-type: none;
+  background-color: #F5FBEF; 
+  color: #2c3e50; 
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+  padding: 20px;
 }
 
-.navbar ul li {
-  display: inline;
-}
 
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: block;
-}
-
-.navbar ul li a:hover {
-  background-color: #575757;
-  color: white;
-}
-/* Logo styling */
-.logo-container {
-  display: inline-block;
-  padding: 10px;
-}
-
-.logo {
-  height: 50px;  /* Adjust the size as needed */
-  width: auto;
-  vertical-align: middle;
-}
-
-/* Navigation Bar */
 .navbar {
-  background-color: #333;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -63,16 +23,31 @@ body {
 
 .navbar ul li {
   display: inline;
-  padding: 14px;
+  padding: 14px; 
 }
 
 .navbar ul li a {
-  color: white;
+  color: black; 
   text-decoration: none;
+  padding: 14px 20px; 
+  border-radius: 50px;
+  display: block;
 }
 
 .navbar ul li a:hover {
-  background-color: #575757;
+  background-color: #87986a;
   color: white;
+  transform: scale(1.2);
 }
 
+
+.logo-container {
+  display: inline-block;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px; 
+  width: auto;
+  vertical-align: middle;
+}
