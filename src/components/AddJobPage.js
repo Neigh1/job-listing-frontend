@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-//import './AddJobPage.css'; // Create a CSS file for styling
+
 
 function AddJobPage() {
-  // State to manage form input values
+
   const [jobTitle, setJobTitle] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [jobDescription, setJobDescription] = useState('');
 
-  // Function to handle form submission
+  
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
 
-    // Example: Log job details to the console (you can replace this with actual submission logic)
+    
     const jobData = {
       jobTitle,
       companyName,
@@ -20,7 +20,7 @@ function AddJobPage() {
 
     console.log('Job Data Submitted:', jobData);
 
-    // Clear form fields after submission (optional)
+    
     setJobTitle('');
     setCompanyName('');
     setJobDescription('');

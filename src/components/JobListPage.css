@@ -30,13 +30,16 @@ h2 {
   
     
 }
-.JobContainer{
+#JobContainer{
     
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
     margin: 0 -10px;
     
+}
+.job-listing:hover {
+    transform: scale(1.05);
 }
 
 .job-listing:hover {
