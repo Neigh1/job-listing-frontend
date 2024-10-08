@@ -1,45 +1,39 @@
-/* Blog.css */
+/* blog.css */
 .blog-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    color: #2c3e50;
-    margin-top: 20px;
-  }
-  
-  .reviews {
-    background: #f8f8f8;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .review {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-  }
-  
-  .review h4 {
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  span {
-    font-style: italic;
-    color: #555;
-  }
-  
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.large {
+  font-size: 1.5em;
+  background: #e0e0e0; 
+}
+
+.small {
+  font-size: 1em;
+  background: #f0f0f0; 
+}

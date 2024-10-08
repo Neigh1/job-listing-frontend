@@ -49,16 +49,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; 
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin: 20px 0;
+    padding: 10px; /* Optional: add some padding */
+    position: relative; /* Set position for child elements */
+}
+
+.ReviewContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin: 20px 0;
+  padding: 10px; /* Optional: add some padding */
+  position: relative; /* Set position for child elements */
 }
 
 .review {
-    margin: 0 20px; 
-    padding: 15px;
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    max-width: 300px; 
+  margin: 0 -40px; /* Use negative margin for overlap */
+  padding: 15px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  max-width: 300px; 
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+  transition: transform 0.2s, z-index 0.2s; /* Add transition for z-index */
+  position: relative; /* Position relative to use z-index */
+  z-index: 1; /* Set default z-index for all items */
+  background-color: #b5c99a; /* Set background color */
 }
+
+.review:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  z-index: 2; /* Bring hovered item to the front */
+}
+
+
+
   .cta {
     text-align: center;
     margin: 50px 0;

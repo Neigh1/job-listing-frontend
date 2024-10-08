@@ -1,84 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
+import { useNavigate } from 'react-router-dom';
+import './blog.css';                     
 
-function AddBlogPostPage() {
-  const [postTitle, setPostTitle] = useState('');
-  const [authorName, setAuthorName] = useState('');
-  const [postContent, setPostContent] = useState('');
-  const [tags, setTags] = useState('');
+function AddToBlog({ setPosts }) {
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (title && content) {
+      const newPost = { title, content };
 
-    const blogPostData = {
-      postTitle,
-      authorName,
-      postContent,
-      tags: tags.split(',').map(tag => tag.trim()), 
-    };
+      setTimeout(() => {
+        console.log("Post added to API:", newPost);
+        
+        
+        setPosts((prevPosts) => [...prevPosts, newPost]);
 
-    console.log('Blog Post Data Submitted:', blogPostData);
+        
+        navigate('/blog');
+      }, 1000);
 
-    // Reset fields after submission
-    setPostTitle('');
-    setAuthorName('');
-    setPostContent('');
-    setTags('');
+      setTitle('');
+      setContent('');
+    }
   };
 
   return (
-    <div className="blog-post-form-container">
-      <h1 className="form-title">Post a New Blog Article</h1>
-      <form className="blog-post-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Post Title</label>
-          <input
-            type="text"
-            name="postTitle"
-            value={postTitle}
-            onChange={(e) => setPostTitle(e.target.value)} 
-            placeholder="Enter the blog post title"
-            required
+    <div>
+      <form onSubmit={handleSubmit} className="blog-form">
+        <div>
+          <label htmlFor="title">Title:</label>
+          <input 
+            type="text" 
+            id="title" 
+            value={title} 
+            onChange={(e) => setTitle(e.target.value)} 
+            required 
           />
         </div>
-
-        <div className="form-group">
-          <label>Author Name</label>
-          <input
-            type="text"
-            name="authorName"
-            value={authorName}
-            onChange={(e) => setAuthorName(e.target.value)} 
-            placeholder="Enter the author's name"
-            required
+        <div>
+          <label htmlFor="content">Content:</label>
+          <textarea 
+            id="content" 
+            value={content} 
+            onChange={(e) => setContent(e.target.value)} 
+            required 
+            rows="10" 
+            cols="30" 
           />
         </div>
-
-        <div className="form-group">
-          <label>Post Content</label>
-          <textarea
-            name="postContent"
-            value={postContent}
-            onChange={(e) => setPostContent(e.target.value)} 
-            placeholder="Enter the blog post content"
-            required
-          />
-        </div>
-
-        <div className="form-group">
-          <label>Tags (comma-separated)</label>
-          <input
-            type="text"
-            name="tags"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)} 
-            placeholder="Enter tags"
-          />
-        </div>
-
-        <button className="submit-button" type="submit">Post Blog</button>
+        <button type="submit">Add Post</button>
       </form>
     </div>
   );
 }
 
-export default AddBlogPostPage;
+export default AddToBlog;
