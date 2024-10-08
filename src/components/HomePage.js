@@ -1,6 +1,8 @@
 import React from 'react';
 import './HomePage.css';
 import AddToBlog from './AddToBlog';
+import MailingList from './mailing'; 
+
 function HomePage() {
   return (
     <div className="homepage">
@@ -41,7 +43,7 @@ function HomePage() {
       
       <div className="cta">
         <button className="AddtoBlog">Post on Blog</button>
-        <button className="post-job-btn">Post a Job</button>
+        <MailingList /> 
       </div>
     </div>
   );
